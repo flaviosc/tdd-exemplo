@@ -1,1 +1,0 @@
-Testando build automático com Jenkins.
