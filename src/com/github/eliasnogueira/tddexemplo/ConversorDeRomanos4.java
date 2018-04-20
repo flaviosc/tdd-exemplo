@@ -1,6 +1,6 @@
 package com.github.eliasnogueira.tddexemplo;
 
-import java.util.Has
+import java.util.HashMap;
 import java.util.Map;
 
 /**
