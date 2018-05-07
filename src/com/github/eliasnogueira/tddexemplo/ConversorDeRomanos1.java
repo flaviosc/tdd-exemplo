@@ -13,6 +13,6 @@ package com.github.eliasnogueira.tddexemplo;
 public class ConversorDeRomanos1 {
 
     public int converte(String numeroRomano) {
-        return 3;
+        return 2;
     }
 }
