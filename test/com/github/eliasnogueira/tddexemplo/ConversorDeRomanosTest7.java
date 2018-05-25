@@ -69,7 +69,7 @@ public class ConversorDeRomanosTest7 {
        ConversorDeRomanos7 conversor = new ConversorDeRomanos7();
        int resultadoObtido = conversor.converte("XXIV");
        
-       assertEquals(24, resultadoObtido);
+       assertEquals(42, resultadoObtido);
     }
     
 }
