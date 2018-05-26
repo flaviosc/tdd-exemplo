@@ -24,9 +24,10 @@
 
     <build>
         <resources>
-        <resource>
-            <directory>${project.basedir}/src</directory>
-        </resource>
+            <resource>
+                <directory>${project.basedir}/src</directory>
+            </resource>
+        </resources>
         <testResources>
             <testResource>
                 <directory>${project.basedir}/test</directory>
