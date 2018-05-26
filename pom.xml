@@ -25,10 +25,10 @@
      <build>
     <resources>
      <resource>
-       <directory>C:/Users/flavio/tdd-exemplo/src/com</directory>
+       <directory>C:/Users/flavio/tdd-exemplo/src</directory>
     </resource>
     <resource>
-       <directory>C:/Users/flavio/tdd-exemplo/src/test</directory>
+       <directory>C:/Users/flavio/tdd-exemplo/test</directory>
      </resource>
     </resources>
  </build>
