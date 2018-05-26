@@ -22,14 +22,15 @@
         <url>http://github.com/KentBeck/junit/tree/master</url>
     </scm>
 
-     <build>
-    <resources>
-     <resource>
-       <directory>C:/Users/flavio/tdd-exemplo/src</directory>
-    </resource>
-    <resource>
-       <directory>C:/Users/flavio/tdd-exemplo/test</directory>
-     </resource>
-    </resources>
- </build>
+    <build>
+        <resources>
+        <resource>
+            <directory>${project.basedir}/src</directory>
+        </resource>
+        <testResources>
+            <testResource>
+                <directory>${project.basedir}/test</directory>
+            </testResource>
+        </testResources>
+    </build>
 </project>
