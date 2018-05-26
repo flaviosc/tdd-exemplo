@@ -1,41 +1,55 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd ">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
     <modelVersion>4.0.0</modelVersion>
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>
     <version>4.8.1</version>
     <name>JUnit</name>
     <url>http://junit.org</url>
-    <description>
-        JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.
-    </description>
-    <organization>
-        <name>JUnit</name>
-        <url>http://www.junit.org</url>
-    </organization>
-    <licenses>
+
+	<properties>
+		<junit.version>4.8.1</junit.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Dependencia para usar arquivos CSV como massa de dados -->
+		<dependency>
+			<groupId>pl.pragmatists</groupId>
+			<artifactId>JUnitParams</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+	</dependencies>
+
+	<!--  Par execucao dos testes via POM ou linha de comando pelo Manven -->
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.20.1</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+     <licenses>
         <license>
             <name>Common Public License Version 1.0</name>
             <url>http://www.opensource.org/licenses/cpl1.0.txt</url>
         </license>
     </licenses>
-    <scm>
+
+     <scm>
         <url>http://github.com/KentBeck/junit/tree/master</url>
     </scm>
 
-    <build>
-        <testSourceDirectory>
-            ${project.basedir}/test
-        </testSourceDirectory>
-
-        <resources>
-            <resource>
-                <directory>${project.basedir}/src</directory>
-            </resource>
-        </resources>
-        <testResources>
-            <testResource>
-                <directory>${project.basedir}/test</directory>
-            </testResource>
-        </testResources>
-    </build>
 </project>
