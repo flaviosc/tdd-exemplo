@@ -26,6 +26,8 @@
     <resources>
      <resource>
        <directory>C:\Users\flavio\tdd-exemplo\src\com\github\eliasnogueira\tddexemplo</directory>
+    </resource>
+    <resource>
        <directory>C:\Users\flavio\tdd-exemplo\src\test\github\eliasnogueira\tddexemplo</directory>
      </resource>
     </resources>
