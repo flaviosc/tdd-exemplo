@@ -1,0 +1,28 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "junit",
+                "projectName": "junit",
+                "workingDirectory": "c:\\Users\\flavio\\tdd-exemplo",
+                "args": [],
+                "vmargs": [],
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "junit",
+                "projectName": "junit",
+                "workingDirectory": "c:\\Users\\flavio\\tdd-exemplo",
+                "args": [],
+                "vmargs": [],
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
